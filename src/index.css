@@ -1,0 +1,110 @@
+@import "tailwindcss";
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+@theme {
+    /* BACKGROUNDS */
+    --color-bg-page: #050505;
+    --color-bg-card: #0f1219;
+    --color-bg-card-hover: #161b26;
+    --color-bg-overlay: rgba(5, 5, 5, 0.85);
+
+    /* BRAND COLORS */
+    --color-primary: #00a1d1;
+    --color-secondary: #0077b6;
+    --color-success: #00d26a;
+    --color-danger: #ff5c5c;
+
+    /* TEXT */
+    --color-text-main: #ffffff;
+    --color-text-muted: #a1a1aa;
+    --color-text-dark: #000000;
+
+    /* FONTS */
+    --font-sans: "Inter", system-ui, sans-serif;
+    --font-serif: "Playfair Display", serif;
+
+    /* RADII */
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+}
+
+@layer base {
+    :root {
+        --bg-page: #050505;
+        --bg-card: #0f1219;
+        --bg-card-hover: #161b26;
+        --bg-overlay: rgba(5, 5, 5, 0.85);
+        --color-primary-val: #00a1d1;
+        --color-secondary-val: #0077b6;
+        --text-main: #ffffff;
+        --text-muted: #a1a1aa;
+        --glass-bg: rgba(20, 25, 34, 0.7);
+        --glass-border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    body {
+        @apply bg-bg-page text-text-main font-sans antialiased;
+        line-height: 1.6;
+    }
+
+    * {
+        @apply m-0 p-0 box-border;
+    }
+}
+
+@layer components {
+    .glass-panel {
+        @apply backdrop-blur-xl border border-white/10 rounded-2xl;
+        background: var(--glass-bg);
+    }
+
+    .premium-btn {
+        @apply px-6 py-2.5 rounded-full font-semibold transition-all duration-200 cursor-pointer;
+        background: linear-gradient(135deg, var(--color-primary-val), #0077b6);
+        color: #fff;
+    }
+
+    .premium-btn:hover {
+        @apply -translate-y-0.5;
+        box-shadow: 0 4px 20px rgba(0, 161, 209, 0.4);
+    }
+
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@layer utilities {
+    .perspective-1000 {
+        perspective: 1000px;
+    }
+
+    .preserve-3d {
+        transform-style: preserve-3d;
+    }
+
+    .backface-hidden {
+        backface-visibility: hidden;
+    }
+
+    .rotate-y-180 {
+        transform: rotateY(180deg);
+    }
+}
