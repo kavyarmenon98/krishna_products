@@ -28,7 +28,7 @@ export default function ProductList() {
             </p>
           </div>
           <a
-            href="https://wa.me/919037009645"
+            href="https://wa.me/918943072598"
             target="_blank"
             rel="noreferrer"
             className="flex items-center gap-3 px-6 py-3 bg-[#25d366] text-white rounded-full font-bold text-sm tracking-widest hover:scale-105 transition-all shadow-lg shadow-green-500/20 whitespace-nowrap"

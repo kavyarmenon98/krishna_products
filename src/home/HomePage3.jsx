@@ -2,36 +2,20 @@ import ShopByCategory from "../product/ShopByCategory";
 import { motion } from "framer-motion";
 
 // Import category images properly for production
-import resin1 from "../assets/category/resin1.jpg";
-import resin2 from "../assets/category/resin2.jpg";
-import mural1 from "../assets/category/mural1.jpg";
-import image14 from "../assets/image14.jpg";
-import image8 from "../assets/image8.webp";
-import image9 from "../assets/image9.jpg";
-import craft2 from "../assets/category/craft2.jpg";
-import craft1 from "../assets/category/craft1.jpg";
+import cosmeticImg from "../assets/category/cosmetic.png";
+import prod1 from "../assets/category/food.png";
 
 function HomePage3() {
   const categories = [
     {
-      title: "Resin Product",
-      imageUrl: [resin1, resin2],
-      link: "Resin",
+      title: "Cosmetics & Beauty",
+      imageUrl: [cosmeticImg],
+      link: "Cosmetics",
     },
     {
-      title: "Mural Paintings",
-      imageUrl: [mural1, image14],
-      link: "Painting",
-    },
-    {
-      title: "Nettipattam",
-      imageUrl: [image8, image9],
-      link: "Nettipattam",
-    },
-    {
-      title: "Craft Works",
-      imageUrl: [craft2, craft1],
-      link: "Craft",
+      title: "Food Products",
+      imageUrl: [prod1],
+      link: "Food",
     },
   ];
 

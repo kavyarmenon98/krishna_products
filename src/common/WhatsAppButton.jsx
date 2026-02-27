@@ -2,8 +2,8 @@ import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const WhatsAppButton = ({
-  phone = "919037009645", // countrycode + number
-  message = "Hello, I’m interested in your products.",
+  phone = "918943072598", // countrycode + number
+  message = "Hello, I’m interested in Krishna Handmade Products.",
   showOnMobileOnly = false,
   position = "right", // "right" | "left"
   themeColor = "#25D366",

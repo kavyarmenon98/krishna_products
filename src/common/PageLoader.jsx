@@ -29,7 +29,7 @@ const PageLoader = () => (
       transition={{ duration: 0.5 }}
       className="relative text-white text-[10px] font-bold uppercase tracking-[0.6em] animate-pulse"
     >
-      Arts & Crafts By Kavya
+      AK Products
     </motion.p>
   </div>
 );

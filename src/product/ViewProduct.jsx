@@ -28,7 +28,7 @@ function ConfirmDeleteModal({ onConfirm, onCancel }) {
       >
         <h3 className="text-xl font-bold mb-3">Delete Product?</h3>
         <p className="text-gray-400 mb-8 leading-relaxed">
-          This action will permanently remove this artwork from your gallery. This cannot be undone.
+          This action will permanently remove this product from your collection. This cannot be undone.
         </p>
 
         <div className="flex gap-3">
@@ -88,7 +88,7 @@ export default function ViewProduct() {
   const addToCartMutation = useMutation({
     mutationFn: addToCartAPI,
     onError: (error) => {
-      toast.error(error?.response?.data?.message || "Failed to add to collection");
+      toast.error(error?.response?.data?.message || "Failed to add to cart");
     }
   });
 
@@ -246,7 +246,7 @@ export default function ViewProduct() {
                 </div>
 
                 <div className="space-y-4 mb-12">
-                  <h3 className="text-xs uppercase font-bold text-gray-500 tracking-[0.2em]">Artist's Description</h3>
+                  <h3 className="text-xs uppercase font-bold text-gray-500 tracking-[0.2em]">Product Details</h3>
                   <p className="text-gray-400 leading-relaxed italic text-lg opacity-90">
                     "{product?.description}"
                   </p>
@@ -266,12 +266,12 @@ export default function ViewProduct() {
                     {addToCartMutation.isPending ? (
                       <>
                         <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
-                        Adding to Collection...
+                        Adding to Cart...
                       </>
                     ) : (
                       <>
                         <FaShoppingCart size={20} />
-                        Add to Collection
+                        Add to Cart
                       </>
                     )}
                   </button>
@@ -279,8 +279,8 @@ export default function ViewProduct() {
                   <button
                     onClick={() =>
                       window.open(
-                        `https://wa.me/919037009645?text=${encodeURIComponent(
-                          `Hi, I'm interested in commissioning this artwork:\n\n${product?.pname}\nReference ID: ${id}`
+                        `https://wa.me/918943072598?text=${encodeURIComponent(
+                          `Hi, I'm interested in this Krishna product:\n\n${product?.pname}\nReference ID: ${id}`
                         )}`,
                         "_blank"
                       )
@@ -293,7 +293,7 @@ export default function ViewProduct() {
                 )}
 
                 <p className="text-center text-[10px] text-gray-600 font-medium uppercase tracking-widest">
-                  Handcrafted with love by Kavya 🎨
+                  Handmade with love by Rathika Nair
                 </p>
               </div>
             </div>

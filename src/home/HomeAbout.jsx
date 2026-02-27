@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import myPic1 from "../assets/me4.jpg";
-import logo2 from "../assets/logo/main_logo.jpeg";
+import myPic1 from "../assets/me4.jpeg";
+import logo2 from "../assets/logo/main_logo_png.png";
 
 export default function HomeAbout() {
     const navigate = useNavigate();
@@ -20,7 +20,7 @@ export default function HomeAbout() {
                 >
                     <img
                         src={logo2}
-                        alt="Kavya Arts"
+                        alt="AK Products"
                         className="w-100 mb-8 drop-shadow-[0_0_40px_rgba(0,161,209,0.3)]"
                     />
                     <div className="absolute inset-0 bg-[var(--color-primary)]/10 blur-3xl rounded-full scale-150 -z-10" />
@@ -33,7 +33,7 @@ export default function HomeAbout() {
                     transition={{ delay: 0.2, duration: 0.8 }}
                     className="text-2xl md:text-4xl font-serif text-white/90 leading-relaxed max-w-5xl italic font-light"
                 >
-                    "Enchanting you since 2019. Discover the refined and exclusive collection by <span className="text-[var(--color-primary)] not-italic">Kavya Arts & Craft</span> . Here art is thoughtfully created with emotion, patience, and precision, offering rare, elegant creations that transform spaces into experiences."
+                    "Experience nature's purity. Discover the exclusive collection of <span className="text-[var(--color-primary)] not-italic">AK Products</span>. Every item is thoughtfully prepared with natural ingredients and traditional wisdom, offering high-quality, handmade goodness for your daily life."
                 </motion.p>
 
                 <motion.div
@@ -51,7 +51,7 @@ export default function HomeAbout() {
                         <div className="lg:w-1/2 relative h-[400px] lg:h-auto overflow-hidden">
                             <img
                                 src={myPic1}
-                                alt="Kavya R Menon"
+                                alt="Rathika Nair"
                                 className="absolute inset-0 w-full h-full object-cover object-top"
                             />
                             {/* Overlay for better text contrast on small screens */}
@@ -77,7 +77,7 @@ export default function HomeAbout() {
                                     transition={{ delay: 0.1 }}
                                     className="text-3xl md:text-4xl lg:text-5xl font-serif text-white mb-8 tracking-tighter leading-tight"
                                 >
-                                    Hey, I Am <span className="italic">Kavya R Menon</span>
+                                    Hey, I Am <span className="italic"> Rathika Nair</span>
                                 </motion.h2>
 
                                 <motion.div
@@ -88,7 +88,7 @@ export default function HomeAbout() {
                                     className="space-y-6 text-gray-300 text-base md:text-lg leading-relaxed font-light mb-12"
                                 >
                                     <p>
-                                        Founder and creative force behind <span className="text-white font-medium italic">Arts & Crafts By Kavya</span>. As a passionate multitasker, I wear many hats—from software developer to artist—to bring you handcrafted pieces that are created with love, creativity, and an eye for detail.
+                                        Founder of <span className="text-white font-medium italic">AK Products</span>. As a passionate believer in natural wellness, I bring you handcrafted beauty essentials and authentic food products—created with love, tradition, and an eye for quality.
                                     </p>
                                 </motion.div>
 

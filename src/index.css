@@ -71,6 +71,13 @@
         box-shadow: 0 4px 20px rgba(0, 161, 209, 0.4);
     }
 
+    .custom-dots-pos {
+        bottom: 40px !important;
+    }
+
+    .custom-dots-pos li button:before {
+        display: none;
+    }
 }
 
 /* Scrollbar Customization */

@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useQueryClient } from "@tanstack/react-query";
 
 // Import logo properly for production
-import logo3 from "../assets/logo/main_logo.jpeg";
+import logo3 from "../assets/logo/main_logo_png.png";
 
 function Nav() {
   const { user } = useSelector((state) => state.auth);
@@ -60,11 +60,8 @@ function Nav() {
 
   const categories = [
     { name: "All Products", path: "/listProduct" },
-    { name: "Nettipattam", path: "/category/Nettipattam" },
-    { name: "Resin Products", path: "/category/Resin" },
-    { name: "Paintings", path: "/category/Painting" },
-    { name: "Craft Items", path: "/category/Craft" },
-    { name: "Fabric Painting", path: "/category/FabricPainting" },
+    { name: "Cosmetics & Beauty", path: "/category/Cosmetics" },
+    { name: "Food Products", path: "/category/Food" },
   ];
 
   const isActive = (path) => location.pathname === path;

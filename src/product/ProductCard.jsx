@@ -20,7 +20,7 @@ function ProductCard({ details }) {
       queryClient.invalidateQueries(["products"]);
     },
     onError: (error) => {
-      toast.error(error?.response?.data?.message || "Failed to delete masterpiece");
+      toast.error(error?.response?.data?.message || "Failed to delete product");
     }
   });
 
@@ -178,8 +178,8 @@ function ProductCard({ details }) {
                     className="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-[#25d366] text-white font-bold text-sm transition-all hover:opacity-90 active:scale-95 shadow-lg shadow-green-500/10"
                     onClick={() =>
                       window.open(
-                        `https://wa.me/919037009645?text=${encodeURIComponent(
-                          `Hi, I'm interested in ${item.pname}`
+                        `https://wa.me/918943072598?text=${encodeURIComponent(
+                          `Hi, I'm interested in Krishna Handmade Products: ${item.pname}`
                         )}`,
                         "_blank"
                       )

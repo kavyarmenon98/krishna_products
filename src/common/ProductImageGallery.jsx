@@ -48,8 +48,8 @@ const ProductImageGallery = ({ images = [], category = "", styleForImage = {} })
                         <div
                             key={idx}
                             className={`h-1 rounded-full transition-all duration-500 ${idx === currentIndex
-                                    ? "bg-[var(--color-primary)] w-4"
-                                    : "bg-white/20 w-1"
+                                ? "bg-[var(--color-primary)] w-4"
+                                : "bg-white/20 w-1"
                                 }`}
                         />
                     ))}

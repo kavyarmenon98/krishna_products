@@ -9,7 +9,7 @@ import { loginUserAPI } from "../services/service";
 import { FaEye, FaEyeSlash, FaLock, FaEnvelope } from "react-icons/fa";
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import main_logo from "../assets/logo/png_logo.png";
+import main_logo from "../assets/logo/main_logo_png.png";
 
 const Login = () => {
   const dispatch = useDispatch();
@@ -221,7 +221,7 @@ const Login = () => {
           transition={{ delay: 0.5 }}
           className="text-center text-white/20 text-xs mt-8"
         >
-          &copy; {new Date().getFullYear()} Arts & Craft By Kavya. All rights reserved.
+          &copy; {new Date().getFullYear()} AK products. All rights reserved.
         </motion.p>
       </div>
     </div>

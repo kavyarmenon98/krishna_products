@@ -121,8 +121,8 @@ function AddProduct() {
     <div className="min-h-screen bg-[#050505] pt-32 pb-20 px-4 md:px-6">
       <div className="max-w-4xl mx-auto">
         <div className="mb-12">
-          <h2 className="text-4xl font-serif text-white mb-2 tracking-tight">Expand the Gallery</h2>
-          <p className="text-gray-500">Add a new masterpiece to the Arts & Craft collection.</p>
+          <h2 className="text-4xl font-serif text-white mb-2 tracking-tight">Expand the Collection</h2>
+          <p className="text-gray-500">Add a new product to the AK Products collection.</p>
         </div>
 
         <form onSubmit={formik.handleSubmit} className="grid grid-cols-1 lg:grid-cols-3 gap-10">
@@ -130,10 +130,10 @@ function AddProduct() {
           <div className="lg:col-span-2 space-y-8">
             <div className="bg-[#111111] border border-white/5 rounded-3xl p-8 space-y-6">
               <div>
-                <label className="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">Artwork Title</label>
+                <label className="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">Product Title</label>
                 <input
                   className="w-full bg-black/40 border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-[var(--color-primary)] transition-all"
-                  placeholder="e.g. Mural of Serenity"
+                  placeholder="e.g. Krishna Hair Care Oil"
                   {...formik.getFieldProps("name")}
                 />
                 {formik.touched.name && formik.errors.name && (
@@ -175,11 +175,8 @@ function AddProduct() {
                   {...formik.getFieldProps("category")}
                 >
                   <option value="">Select Category</option>
-                  <option value="Painting">Painting</option>
-                  <option value="FabricPainting">Fabric Painting</option>
-                  <option value="Craft">Craft Item</option>
-                  <option value="Nettipattam">Nettipattam</option>
-                  <option value="Resin">Resin Products</option>
+                  <option value="Cosmetics">Cosmetics & Beauty</option>
+                  <option value="Food">Food Products</option>
                 </select>
                 {formik.touched.category && formik.errors.category && (
                   <p className="text-red-500 text-xs mt-1">{formik.errors.category}</p>
@@ -204,7 +201,7 @@ function AddProduct() {
                 <textarea
                   rows="5"
                   className="w-full bg-black/40 border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-[var(--color-primary)] transition-all resize-none"
-                  placeholder="Describe the inspiration behind this piece..."
+                  placeholder="Describe the benefits and details of this product..."
                   {...formik.getFieldProps("description")}
                 />
                 {formik.touched.description && formik.errors.description && (
@@ -298,7 +295,7 @@ function AddProduct() {
                     CURATING...
                   </>
                 ) : (
-                  "PUBLISH ARTWORK"
+                  "PUBLISH PRODUCT"
                 )}
               </button>
               <button

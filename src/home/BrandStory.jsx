@@ -6,30 +6,30 @@ const artisanalPledges = [
         icon: <FiTruck />,
         title: "Free shipping all over india ",
         description:
-            "Carefully packed and shipped across India . From our Kerala studio to your doorstep, every artwork is securely packed to arrive safely and beautifully.",
+            "Carefully packed and shipped across India. From our Kerala studio to your doorstep, every product is securely packed to arrive safely and beautifully.",
     },
     {
-        icon: <FiEdit3 />,
-        title: "100% Hand-Painted & Fade-Resistant Colors",
-        description: "Every masterpiece is created with precision and care—no machines, no printing, just pure artisanal soul.We use high-grade, durable pigments that maintain their vibrancy for decades",
+        icon: <FiStar />,
+        title: "100% Natural & Chemical-Free",
+        description: "Our beauty products are made with pure herbal ingredients, ensuring no harsh chemicals touch your skin or hair. We believe in the power of nature to heal and nourish.",
     },
     {
-        icon: <FiInfo />,
-        title: "Natural Handmade Variations",
+        icon: <FiSun />,
+        title: "Authentic Homemade Flavors",
         description:
-            "As each piece is handcrafted, subtle variations such as tiny air bubbles, texture differences, or slight color shifts may occur due to weather and manual techniques. Exact replicas are not possible. Please place your order only if you appreciate the beauty of these natural variations.",
+            "Our food products are prepared in small batches using traditional recipes and sun-dried ingredients, preserving the authentic taste of home in every bite.",
     },
     {
         icon: <FiCheckCircle />,
-        title: "Premium Quality Resin",
-        description: "Our resin art features non-toxic, food-grade materials that are crystal clear and highly durable.",
+        title: "Premium Quality Standards",
+        description: "We source the finest ingredients and maintain strict hygiene standards to ensure that every AK Product meets the highest quality expectations.",
     },
 ];
 
 const metrics = [
-    { value: "100+", label: "Happy Customers" },
-    { value: "180+", label: "Products Sold" },
-    { value: "4.5/5", label: "Avg. Artist Rating" },
+    { value: "500+", label: "Happy Customers" },
+    { value: "1000+", label: "Products Sold" },
+    { value: "4.9/5", label: "Avg. Customer Rating" },
 ];
 
 export default function BrandStory() {
@@ -48,7 +48,7 @@ export default function BrandStory() {
                         viewport={{ once: true }}
                         className="text-[var(--color-primary)] font-bold text-[10px] md:text-xs uppercase tracking-[0.6em] mb-4 block"
                     >
-                        Arts & Crafts By Kavya
+                        AK Products
                     </motion.span>
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
@@ -57,7 +57,7 @@ export default function BrandStory() {
                         transition={{ delay: 0.1 }}
                         className="text-4xl md:text-7xl font-serif text-white tracking-tighter"
                     >
-                        Why Trust Us !!!
+                        Why Choose Us !!!
                     </motion.h2>
                 </div>
 
@@ -68,9 +68,9 @@ export default function BrandStory() {
                     <div className="flex flex-col xl:flex-row gap-16 items-start">
                         {/* Summary Column - Sticky only on Desktop */}
                         <div className="xl:w-1/3 w-full xl:sticky xl:top-32">
-                            <h3 className="text-4xl font-serif text-white mb-8 border-b border-white/5 pb-6">Our Artisanal <span className="italic text-[var(--color-primary)]">Commitments</span></h3>
+                            <h3 className="text-4xl font-serif text-white mb-8 border-b border-white/5 pb-6">Our Purity <span className="italic text-[var(--color-primary)]">Commitments</span></h3>
                             <p className="text-gray-400 text-base leading-relaxed font-medium mb-12 opacity-80">
-                                Beyond aesthetics, we pledge absolute quality and transparency in every brushstroke and pour. Our work mirrors our heritage and passion.
+                                At AK Products, we pledge absolute purity and transparency. From our handmade beauty range to our authentic food products, we ensure every item is crafted with care and integrity.
                             </p>
 
                             {/* Metrics inside the commitment box */}
@@ -148,7 +148,7 @@ export default function BrandStory() {
                                 <FiFacebook size={18} />
                             </a>
                             <a
-                                href="https://www.instagram.com/arts_n_crafts_by_kavya/"
+                                href="https://www.instagram.com/krishna_handmade_products/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-gradient-to-tr hover:from-[#f09433] hover:via-[#dc2743] hover:to-[#bc1888] hover:border-transparent transition-all duration-300 shadow-lg"
@@ -157,7 +157,7 @@ export default function BrandStory() {
                                 <FiInstagram size={18} />
                             </a>
                             <a
-                                href="https://wa.me/919037009645"
+                                href="https://wa.me/918943072598"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-[#25D366] hover:border-[#25D366] transition-all duration-300 shadow-lg"
@@ -168,7 +168,7 @@ export default function BrandStory() {
                         </div>
                     </div>
                     <p className="text-gray-600 text-[10px] font-black uppercase tracking-[0.5em]">
-                        Arts & Crafts By Kavya ⋅ Focused on Artisanal Excellence
+                        AK Products ⋅ Focused on Natural Excellence
                     </p>
                 </div>
             </div>

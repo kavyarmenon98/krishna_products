@@ -187,8 +187,8 @@ export default function Review() {
                                 key={i}
                                 onClick={() => setCurrentIndex(i * itemsPerPage)}
                                 className={`w-2 h-2 rounded-full transition-all duration-300 ${Math.floor(currentIndex / itemsPerPage) === i
-                                        ? "bg-[var(--color-primary)] w-8"
-                                        : "bg-white/20 hover:bg-white/40"
+                                    ? "bg-[var(--color-primary)] w-8"
+                                    : "bg-white/20 hover:bg-white/40"
                                     }`}
                             />
                         ))}
@@ -208,7 +208,7 @@ export default function Review() {
                         </span>
                     </motion.button>
                     <p className="mt-6 text-gray-600 text-[10px] uppercase font-bold tracking-widest opacity-60">
-                        Join our community of art enthusiasts
+                        Join our community of natural wellness
                     </p>
                 </div>
 

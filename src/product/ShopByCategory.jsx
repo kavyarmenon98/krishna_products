@@ -20,7 +20,7 @@ export default function ShopByCategory({
     <motion.div
       whileHover={{ y: -10 }}
       onClick={onNavigate}
-      className="group perspective-1000 relative h-[400px] w-full cursor-pointer rounded-3xl overflow-hidden"
+      className="group perspective-1000 relative h-[500px] md:h-[650px] w-full cursor-pointer rounded-[40px] overflow-hidden shadow-2xl"
     >
       <div className="relative h-full w-full transition-all duration-700 preserve-3d group-hover:rotate-y-180">
         {/* FRONT */}

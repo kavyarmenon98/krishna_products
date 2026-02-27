@@ -60,7 +60,7 @@ const InitialSplashScreen = ({ children }) => {
                         >
                             <img
                                 src={splashLogo}
-                                alt="Arts & Crafts by Kavya"
+                                alt="AK Products"
                                 className="w-full h-auto drop-shadow-[0_0_50px_rgba(0,161,209,0.3)]"
                             />
 

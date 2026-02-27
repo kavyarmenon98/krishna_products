@@ -29,7 +29,7 @@ function EditAddressModal({ isOpen, onClose, currentAddress, onSave, isLoading }
         <div className="flex justify-between items-center mb-8">
           <div>
             <h3 className="text-2xl font-serif text-white">Update Location</h3>
-            <p className="text-gray-500 text-sm mt-1">Where should we deliver your artworks?</p>
+            <p className="text-gray-500 text-sm mt-1">Where should we deliver your products?</p>
           </div>
           <button onClick={onClose} className="p-2 text-gray-400 hover:text-white transition-colors">
             <FiX size={24} />
@@ -122,7 +122,7 @@ export default function MyOrders() {
               animate={{ opacity: 1, x: 0 }}
               className="text-5xl font-serif text-white tracking-tight mb-4"
             >
-              Your Collection Journey
+              Your Order Journey
             </motion.h1>
             <motion.p
               initial={{ opacity: 0 }}
@@ -130,7 +130,7 @@ export default function MyOrders() {
               transition={{ delay: 0.2 }}
               className="text-gray-500 text-lg font-medium"
             >
-              Tracking the arrival of your handcrafted treasures.
+              Tracking the arrival of your handmade products.
             </motion.p>
           </div>
 
@@ -159,7 +159,7 @@ export default function MyOrders() {
         {!data?.orders?.length ? (
           <div className="py-32 flex flex-col items-center justify-center text-center opacity-20">
             <FiBox size={80} className="mb-6" />
-            <h3 className="text-2xl font-serif italic">Your journal of acquisitions is currently empty.</h3>
+            <h3 className="text-2xl font-serif italic">Your order list is currently empty.</h3>
           </div>
         ) : (
           <div className="space-y-8">
@@ -186,7 +186,7 @@ export default function MyOrders() {
                   </div>
 
                   <div className="text-right">
-                    <p className="text-[10px] font-black text-gray-500 uppercase tracking-widest mb-1">Total Valuation</p>
+                    <p className="text-[10px] font-black text-gray-500 uppercase tracking-widest mb-1">Total Amount</p>
                     <p className="text-4xl font-serif font-black text-[var(--color-primary)] tracking-tighter">₹{order.totalAmount}</p>
                   </div>
                 </div>
@@ -239,7 +239,7 @@ export default function MyOrders() {
                   </div>
 
                   <button className="flex items-center gap-2 text-[10px] font-black text-[var(--color-primary)] uppercase tracking-[0.2em] group/btn">
-                    Journal Detail <FiArrowRight className="group-hover/btn:translate-x-1 transition-transform" />
+                    Order Detail <FiArrowRight className="group-hover/btn:translate-x-1 transition-transform" />
                   </button>
                 </div>
               </motion.div>

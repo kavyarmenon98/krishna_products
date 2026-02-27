@@ -213,7 +213,7 @@ export default function CartPage() {
         key: import.meta.env.VITE_RAZORPAY_KEY_ID,
         amount: order.amount,
         currency: order.currency,
-        name: "Arts & Craft By Kavya",
+        name: "AK products",
         description: "Handcrafted with Love",
         order_id: order.id,
         handler: async (res) => {
@@ -224,8 +224,8 @@ export default function CartPage() {
             // Construct WhatsApp message after verification
             const orderDetails = data.cart.map(item => `- ${item.name} (Qty: ${item.quantity}, Price: ₹${item.price})`).join('\n');
             const total = calculateTotal();
-            const whatsappMsg = `Hi Kavya, I've just placed an order! 🎉\n\n🆔 *Order ID:* ${order.id}\n\n🛍️ *Order Details:*\n${orderDetails}\n\n💰 *Total Amount:* ₹${total}\n📍 *Shipping Address:* ${userData?.user?.address}\n\nPlease check the admin panel for details.`;
-            const whatsappUrl = `https://wa.me/919037009645?text=${encodeURIComponent(whatsappMsg)}`;
+            const whatsappMsg = `Hi Rathika Nair, I've just placed an order! 🎉\n\n🆔 *Order ID:* ${order.id}\n\n🛍️ *Order Details:*\n${orderDetails}\n\n💰 *Total Amount:* ₹${total}\n📍 *Shipping Address:* ${userData?.user?.address}\n\nPlease check the admin panel for details.`;
+            const whatsappUrl = `https://wa.me/918943072598?text=${encodeURIComponent(whatsappMsg)}`;
 
             // Attempt to open WhatsApp
             window.open(whatsappUrl, '_blank');

@@ -120,14 +120,14 @@ function EditProduct() {
     setVisibleImages((prev) => prev.filter((_, i) => i !== index));
   };
 
-  if (isLoading) return <div className="min-h-screen bg-[#050505] flex justify-center items-center h-screen"><p className="text-white font-serif italic animate-pulse">Loading Artwork...</p></div>;
+  if (isLoading) return <div className="min-h-screen bg-[#050505] flex justify-center items-center h-screen"><p className="text-white font-serif italic animate-pulse">Loading Product...</p></div>;
 
   return (
     <div className="min-h-screen bg-[#050505] pt-32 pb-20 px-4 md:px-6">
       <div className="max-w-5xl mx-auto">
         <div className="flex justify-between items-end mb-12">
           <div>
-            <h2 className="text-4xl font-serif text-white mb-2 tracking-tight">Refine Masterpiece</h2>
+            <h2 className="text-4xl font-serif text-white mb-2 tracking-tight">Refine Collection</h2>
             <p className="text-gray-500 italic">Editing: {data?.product?.pname}</p>
           </div>
           <button
@@ -172,11 +172,8 @@ function EditProduct() {
                   <label className="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">Category</label>
                   <select className="w-full bg-black/40 border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-[var(--color-primary)] transition-all appearance-none" {...formik.getFieldProps("category")}>
                     <option value="">Select Category</option>
-                    <option value="Painting">Painting</option>
-                    <option value="FabricPainting">Fabric Painting</option>
-                    <option value="Craft">Craft Item</option>
-                    <option value="Nettipattam">Nettipattam</option>
-                    <option value="Resin">Resin Products</option>
+                    <option value="Cosmetics">Cosmetics & Beauty</option>
+                    <option value="Food">Food Products</option>
                   </select>
                   {formik.touched.category && formik.errors.category && (
                     <p className="text-red-500 text-xs mt-1">{formik.errors.category}</p>
@@ -212,7 +209,7 @@ function EditProduct() {
                 </>
               ) : (
                 <>
-                  <FiSave size={20} /> UPDATE COLLECTION
+                  <FiSave size={20} /> UPDATE PRODUCT
                 </>
               )}
             </button>
@@ -221,7 +218,7 @@ function EditProduct() {
           {/* MEDIA ASSETS */}
           <div className="lg:col-span-5 space-y-8">
             <div className="bg-[#111111] border border-white/5 rounded-3xl p-8">
-              <label className="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-6">Current Gallery</label>
+              <label className="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-6">Product Images</label>
               <div className="grid grid-cols-3 gap-3">
                 {visibleImages.map((img, i) => (
                   <div key={i} className="relative aspect-square rounded-xl overflow-hidden border border-white/10 group">

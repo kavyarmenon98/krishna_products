@@ -12,7 +12,7 @@ function Home() {
     return (
         <>
             <WhatsAppButton />
-            <HomePage1 />
+            <HomePage1  />
             <HomePage3 />
             <HomeAbout />
             <BulkGifting />

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FiMessageSquare } from "react-icons/fi";
-import giftImage from "../assets/gift1.jpg";
+import giftImage from "../assets/WhatsApp Image 2026-02-09 at 9.35.30 PM.jpeg";
 
 export default function BulkGifting() {
     return (
@@ -29,14 +29,14 @@ export default function BulkGifting() {
                                 Celebrate Life's Every Moment
                             </span>
                             <h2 className="text-3xl lg:text-6xl font-serif text-white mb-8 tracking-tight leading-tight">
-                                Gifts Crafted with <span className="italic text-[var(--color-primary)]">Heart & Soul</span>
+                              Nature’s Touch for Clear Skin <span className="italic text-[var(--color-primary)]">From Breakouts to Bright Skin</span>
                             </h2>
                             <p className="text-gray-400 text-base md:text-lg mb-10 leading-relaxed font-medium">
-                                From the delicate strokes of a personalized portrait to the timeless elegance of traditional murals, we transform your emotions into enduring art. Whether it's a wedding, birthday, or a milestone worth honoring, give a gift that truly resonates—crafted by hand, delivered with love.
+                                Whether it's the nourishing touch of our handmade cosmetics or the authentic taste of our herbal delicacies, AK Products offers thoughtfully curated hampers perfect for any occasion. Share the gift of pure, natural wellness with those who matter most.
                             </p>
 
                             <button
-                                onClick={() => window.open(`https://wa.me/919037009645?text=${encodeURIComponent("Hi, I'm interested in personalizing a gift for a special occasion.")}`, "_blank")}
+                                onClick={() => window.open(`https://wa.me/918943072598?text=${encodeURIComponent("Hi, I'm interested in AK Products curated hampers.")}`, "_blank")}
                                 className="w-full sm:w-auto px-10 py-4 bg-white/5 border border-white/10 rounded-2xl text-white font-bold uppercase tracking-widest hover:bg-[var(--color-primary)] hover:text-white transition-all flex items-center justify-center gap-3 active:scale-95"
                             >
                                 <FiMessageSquare /> Start Customizing
