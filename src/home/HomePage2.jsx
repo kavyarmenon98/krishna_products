@@ -75,7 +75,7 @@ function HomePage2() {
                   <ProductImageGallery
                     images={item.image}
                     category={item.category}
-                    styleForImage={{ borderRadius: '0px' }}
+                    styleForImage={{ borderRadius: '0px', objectPosition: 'top' }}
                   />
                 </div>
 

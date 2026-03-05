@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import splashLogo from "../assets/logo/index_logo_black.png";
+import splashLogo from "../assets/logo/main_logo_png.png";
 
 const InitialSplashScreen = ({ children }) => {
     const [loading, setLoading] = useState(true);
@@ -36,8 +36,8 @@ const InitialSplashScreen = ({ children }) => {
                     >
                         {/* Background elements for premium feel */}
                         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                            <div className="absolute top-[10%] left-[5%] w-[40%] h-[40%] bg-[#00a1d1]/5 blur-[120px] rounded-full" />
-                            <div className="absolute bottom-[10%] right-[5%] w-[40%] h-[40%] bg-[#00a1d1]/5 blur-[120px] rounded-full" />
+                            <div className="absolute top-[10%] left-[5%] w-[40%] h-[40%] bg-[#ffb800]/5 blur-[120px] rounded-full" />
+                            <div className="absolute bottom-[10%] right-[5%] w-[40%] h-[40%] bg-[#ffb800]/5 blur-[120px] rounded-full" />
                         </div>
 
                         <motion.div
@@ -61,7 +61,7 @@ const InitialSplashScreen = ({ children }) => {
                             <img
                                 src={splashLogo}
                                 alt="AK Products"
-                                className="w-full h-auto drop-shadow-[0_0_50px_rgba(0,161,209,0.3)]"
+                                className="w-full h-auto drop-shadow-[0_0_50px_rgba(255,184,0,0.3)]"
                             />
 
                             {/* Elegant loader bar */}
@@ -74,7 +74,7 @@ const InitialSplashScreen = ({ children }) => {
                                         repeat: Infinity,
                                         ease: "easeInOut"
                                     }}
-                                    className="absolute inset-0 bg-gradient-to-r from-transparent via-[#00a1d1] to-transparent w-full"
+                                    className="absolute inset-0 bg-gradient-to-r from-transparent via-[#ffb800] to-transparent w-full"
                                 />
                             </div>
                         </motion.div>

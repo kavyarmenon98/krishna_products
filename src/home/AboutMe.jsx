@@ -7,7 +7,7 @@ import logo2 from "../assets/logo/main_logo_png.png";
 
 export default function AboutMe() {
     return (
-        <div className="min-h-screen bg-black text-white pt-24 pb-16 px-4 md:px-6 overflow-hidden">
+        <div className="min-h-screen bg-black text-white pt-12 pb-16 px-4 md:px-6 overflow-hidden">
             {/* Background elements */}
             <div className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden select-none">
                 <div className="absolute top-1/4 -left-20 w-96 h-96 bg-[var(--color-primary)]/5 blur-[120px] rounded-full" />
@@ -70,7 +70,7 @@ export default function AboutMe() {
                             <div className="flex flex-col items-center gap-6">
                                 <div className="flex gap-4">
                                     <a
-                                        href="https://www.facebook.com/kavyarmenon.kavyarmenon/"
+                                        href="https://www.facebook.com/share/1CPBL16Jub/"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-[#1877F2] hover:border-[#1877F2] transition-all duration-300 shadow-lg"
@@ -79,7 +79,7 @@ export default function AboutMe() {
                                         <FiFacebook size={18} />
                                     </a>
                                     <a
-                                        href="https://www.instagram.com/krishna_handmade_products/"
+                                        href="https://www.instagram.com/rathikaa_nairr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-gradient-to-tr hover:from-[#f09433] hover:via-[#dc2743] hover:to-[#bc1888] hover:border-transparent transition-all duration-300 shadow-lg"

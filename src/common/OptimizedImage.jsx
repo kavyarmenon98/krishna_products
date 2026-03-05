@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useRef } from "react";
 import { motion } from "framer-motion";
-import loaderIcon from "../assets/logo/icon_black2.png";
+import loaderIcon from "../assets/logo/main_logo_png.png";
 
 /**
  * OptimizedImage Component

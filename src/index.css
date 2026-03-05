@@ -10,8 +10,8 @@
     --color-bg-overlay: rgba(5, 5, 5, 0.85);
 
     /* BRAND COLORS */
-    --color-primary: #00a1d1;
-    --color-secondary: #0077b6;
+    --color-primary: #ffb800;
+    --color-secondary: #d97706;
     --color-success: #00d26a;
     --color-danger: #ff5c5c;
 
@@ -36,8 +36,8 @@
         --bg-card: #0f1219;
         --bg-card-hover: #161b26;
         --bg-overlay: rgba(5, 5, 5, 0.85);
-        --color-primary-val: #00a1d1;
-        --color-secondary-val: #0077b6;
+        --color-primary-val: #ffb800;
+        --color-secondary-val: #d97706;
         --text-main: #ffffff;
         --text-muted: #a1a1aa;
         --glass-bg: rgba(20, 25, 34, 0.7);
@@ -68,7 +68,7 @@
 
     .premium-btn:hover {
         @apply -translate-y-0.5;
-        box-shadow: 0 4px 20px rgba(0, 161, 209, 0.4);
+        box-shadow: 0 4px 20px rgba(255, 184, 0, 0.4);
     }
 
     .custom-dots-pos {

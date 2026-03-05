@@ -10,6 +10,8 @@ import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { FaEye, FaEyeSlash, FaUser, FaEnvelope, FaLock, FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
 
+import main_logo from "../assets/logo/main_logo_png.png";
+
 const Register = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -83,8 +85,8 @@ const Register = () => {
 
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-        // Cyan/Blue color for particles
-        ctx.fillStyle = `rgba(0, 161, 209, ${p.alpha})`;
+        // Gold color for particles
+        ctx.fillStyle = `rgba(255, 184, 0, ${p.alpha})`;
         ctx.fill();
       });
 
@@ -102,7 +104,7 @@ const Register = () => {
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0b0f19]">
       {/* Background & Particles */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#1a2c4e] via-[#0b0f19] to-[#000000] opacity-80" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#4a370e] via-[#0b0f19] to-[#000000] opacity-80" />
         <canvas ref={canvasRef} className="absolute inset-0" />
       </div>
 
@@ -113,7 +115,7 @@ const Register = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="glass-panel p-10 rounded-3xl shadow-2xl border border-white/10 backdrop-blur-xl relative overflow-hidden"
           style={{
-            background: "rgba(15, 23, 42, 0.7)",
+            background: "rgba(34, 25, 10, 0.7)",
             boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.5)"
           }}
         >
@@ -128,6 +130,7 @@ const Register = () => {
               className="inline-block relative mb-4"
             >
               <div className="absolute inset-0 bg-[var(--color-primary)] blur-3xl opacity-20 rounded-full" />
+              <img src={main_logo} alt="Logo" className="w-50 relative z-10 mx-auto drop-shadow-lg mb-6" />
               <h2 className="text-3xl font-serif text-white tracking-wide relative z-10">Create Account</h2>
             </motion.div>
             <p className="text-gray-400 text-sm opacity-80">Join our community of art lovers</p>
@@ -253,7 +256,7 @@ const Register = () => {
                 disabled={registerMutation.isPending}
                 whileHover={{ scale: 1.01, translateY: -2 }}
                 whileTap={{ scale: 0.98 }}
-                className="w-full py-4 rounded-xl bg-gradient-to-r from-[var(--color-primary)] via-[#00a1d1] to-[#0077b6] text-white font-extrabold text-base shadow-xl hover:shadow-[var(--color-primary)]/40 transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed tracking-widest"
+                className="w-full py-4 rounded-xl bg-gradient-to-r from-[var(--color-primary)] via-[#ffb800] to-[#d97706] text-white font-extrabold text-base shadow-xl hover:shadow-[var(--color-primary)]/40 transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed tracking-widest"
               >
                 {registerMutation.isPending ? (
                   <span className="flex items-center justify-center gap-2">

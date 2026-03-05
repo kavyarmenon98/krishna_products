@@ -68,6 +68,7 @@ function ProductCard({ details }) {
                   category={item.category}
                   styleForImage={{
                     borderRadius: "12px",
+                    objectPosition: "top"
                   }}
                 />
               </div>

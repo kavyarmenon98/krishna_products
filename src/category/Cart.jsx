@@ -432,7 +432,7 @@ export default function CartPage() {
                 <div className="mt-8 pt-6 border-t border-white/5">
                   <div className="bg-white/5 rounded-2xl p-4 border border-white/5">
                     <div className="flex justify-between items-start mb-3">
-                      <span className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-[#00a1d1]">
+                      <span className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-[#ffb800]">
                         <FiMapPin /> Delivery To
                       </span>
                       <button
@@ -472,7 +472,7 @@ export default function CartPage() {
                 </div>
 
                 <button
-                  className="group w-full py-4 rounded-2xl bg-gradient-to-r from-[var(--color-primary)] to-[#c59d5f] text-black font-extrabold text-lg flex items-center justify-center gap-3 transition-all hover:scale-[1.02] active:scale-[0.98] shadow-xl shadow-[var(--color-primary)]/10 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="group w-full py-4 rounded-2xl bg-gradient-to-r from-[var(--color-primary)] to-[#d97706] text-black font-extrabold text-lg flex items-center justify-center gap-3 transition-all hover:scale-[1.02] active:scale-[0.98] shadow-xl shadow-[var(--color-primary)]/10 disabled:opacity-50 disabled:cursor-not-allowed"
                   disabled={checkoutLoading || createOrderMutation.isPending || !data?.cart?.length}
                   onClick={handleCheckout}
                 >

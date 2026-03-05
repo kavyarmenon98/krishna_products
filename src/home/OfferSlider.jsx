@@ -16,7 +16,7 @@ export default function OfferSlider() {
     });
 
     const offerProducts =
-        data?.readproduct?.filter((product) => product.discountPercentage > 30) || [];
+        data?.readproduct?.filter((product) => product.discountPercentage > 25) || [];
 
     // Handle Resize
     useEffect(() => {
@@ -88,7 +88,7 @@ export default function OfferSlider() {
                                         <img
                                             src={product.images?.[0] || product.image}
                                             alt={product.pname}
-                                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                            className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-t from-[#0f1219] via-transparent to-transparent opacity-80" />
 
@@ -129,8 +129,8 @@ export default function OfferSlider() {
                                 key={i}
                                 onClick={() => setCurrentIndex(i * itemsPerPage)}
                                 className={`w-2 h-2 rounded-full transition-all duration-300 ${Math.floor(currentIndex / itemsPerPage) === i
-                                        ? "bg-[var(--color-primary)] w-8"
-                                        : "bg-white/20 hover:bg-white/40"
+                                    ? "bg-[var(--color-primary)] w-8"
+                                    : "bg-white/20 hover:bg-white/40"
                                     }`}
                             />
                         ))}

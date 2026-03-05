@@ -11,7 +11,7 @@ import gemini1 from "../assets/gemini1.png";
 
 function HomePage1() {
   const navigate = useNavigate();
-  const images = [gemini2, gemini1];
+  const images = [ gemini1];
 
   const settings = {
     dots: true,
@@ -43,7 +43,7 @@ function HomePage1() {
               <img
                 src={src}
                 alt={`Hero ${index + 1}`}
-                className="w-full h-full object-cover opacity-70"
+                className="w-full h-full object-cover object-top opacity-70"
               />
             </motion.div>
             <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/90" />

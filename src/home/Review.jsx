@@ -7,18 +7,18 @@ import { getMyOrderAPI } from "../services/service";
 
 const reviews = [
     {
-        name: "Keerthana",
+        name: "Keerthi",
         location: "Paravoor, Cochin",
         rating: 5,
-        text: "Chechi painting thuran nokiyitoo, veetila ellavarakum ishtamayi nalla bhangiyayittind, ellavaraum mugathin nalla aishwaryam ulla pola ind, vicharichathinalum bhangi ayitund chechi photo ayachapo kandathinalum bhangi ayitt neritt kandapo,Eni athe frame cheythitulla photo nian ayakatto...",
+        text: "I have been using this hair oil for a few weeks and my hair fall has reduced a lot. My hair feels softer and healthier now.",
         initials: "KK",
         productImage: "https://res.cloudinary.com/dibwknecl/image/upload/v1768994137/product_uploads/w9k2ba6acm1qrss6mcd0.jpg"
     },
     {
-        name: "Aparna Roy",
+        name: "Ammu",
         location: "Delhi, Uttar Pradesh",
         rating: 5,
-        text: "Lovely work—you've done a beautiful job. I'll be putting these up on the wall. You're an amazing artist; keep going. Thank you for making my home beautiful!",
+        text: "My hair was very dry before, but after using this oil it became smooth and shiny. Highly recommended",
         initials: "AR",
         productImage: "https://res.cloudinary.com/dibwknecl/image/upload/v1768997332/product_uploads/eskcweqiin8q4h7geotm.jpg"
     },
@@ -26,31 +26,31 @@ const reviews = [
         name: "Archana",
         location: "Australia",
         rating: 5,
-        text: "Received the courier. Beautiful painting! Thank you so much—keep in touch 😊",
+        text: "This herbal soap makes my skin feel fresh and clean. Much better than regular chemical soaps.",
         initials: "AN",
         productImage: "https://res.cloudinary.com/dibwknecl/image/upload/v1768997064/product_uploads/efkppavfenlifjcacfq3.jpg"
     },
     {
-        name: "Rajesh Gopalakrishnan",
+        name: "Gopalakrishnan",
         location: "Tambaram, Chennai",
         rating: 5,
-        text: "I've received it, madam. It's beautiful—thank you. I collected it from the gate as I was at the office. I felt the flowers could have been slightly bigger, as they look a little small. Overall, it's very elegant.",
+        text: "My skin is sensitive, but this soap suits me very well. No irritation at all.",
         initials: "RG",
         productImage: "https://res.cloudinary.com/dibwknecl/image/upload/v1768992245/product_uploads/knzysyfl9ipro3rcossl.jpg"
     },
     {
-        name: "Reshma Nagesh",
+        name: "Reshma",
         location: "Kuripuzha, kollam",
         rating: 4,
-        text: "Received the parcel. Thank you, dear. Eniyum enthelum ullappol parayam, kettto. Enikku ente molude oru baby keepsake cheyyanam. Njaan naatil varumbo ayachu tharaam",
+        text: "Very fresh mango flavor and rich spices. My whole family enjoyed it.",
         initials: "RN",
         productImage: "https://res.cloudinary.com/dibwknecl/image/upload/v1769010708/product_uploads/nhbevr1bc38bitt1m0nm.jpg"
     },
     {
-        name: "Julia Joseph",
+        name: "Joseph Jain",
         location: "Kakkanad, Kochi",
         rating: 4,
-        text: "It truly means a lot to me. You did everything so quickly, and it looks absolutely beautiful ✨💕 I showed it to my friend, and she loved it too 😍 ,Thank you for taking time in between your work and even at midnight 🌙🙏 You’ve helped me so much, and your work is truly amazing ❤️🎨",
+        text: "IThis mango pickle tastes just like homemade pickle. Very authentic and delicious.",
         initials: "JJ",
         productImage: "https://res.cloudinary.com/dibwknecl/image/upload/v1768222824/product_uploads/xkbqev7foc2ca7hz6lsu.jpg"
     },
@@ -96,7 +96,7 @@ export default function Review() {
         <section className="bg-black py-12 md:py-20 px-4 md:px-6 relative overflow-hidden mb-8 md:mb-0">
             {/* Background Decorations */}
             <div className="absolute top-0 right-0 w-96 h-96 bg-[var(--color-primary)]/5 blur-[120px] rounded-full pointer-events-none" />
-            <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-500/5 blur-[120px] rounded-full pointer-events-none" />
+            <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#d97706]/5 blur-[120px] rounded-full pointer-events-none" />
 
             <div className="max-w-7xl mx-auto relative z-10">
                 <div className="flex flex-col items-center text-center mb-16 md:mb-24">
@@ -143,9 +143,9 @@ export default function Review() {
                                     className="bg-[#0f1219] rounded-[40px] border border-white/5 h-[500px] flex flex-col relative overflow-hidden group shadow-2xl transition-all duration-500 hover:border-[var(--color-primary)]/30 p-6 md:p-8"
                                 >
                                     {/* Product Image */}
-                                    <div className="w-20 h-20 rounded-2xl overflow-hidden border border-white/10 shadow-xl mb-6 shrink-0 bg-black/40">
+                                    {/* <div className="w-20 h-20 rounded-2xl overflow-hidden border border-white/10 shadow-xl mb-6 shrink-0 bg-black/40">
                                         <img src={review.productImage} alt="product" className="w-full h-full object-cover transition-transform group-hover:scale-110 duration-500" />
-                                    </div>
+                                    </div> */}
 
                                     {/* Stars */}
                                     <div className="flex gap-1 mb-6 text-amber-400">
@@ -164,7 +164,7 @@ export default function Review() {
 
                                     <div className="mt-auto flex items-center gap-4 pt-6 border-t border-white/5">
                                         <div className="w-12 h-12 rounded-full border-2 border-[var(--color-primary)]/20 p-0.5 shrink-0">
-                                            <div className="w-full h-full rounded-full bg-gradient-to-br from-[var(--color-primary)] to-purple-600 flex items-center justify-center text-white font-bold text-sm">
+                                            <div className="w-full h-full rounded-full bg-gradient-to-br from-[var(--color-primary)] to-[#d97706] flex items-center justify-center text-white font-bold text-sm">
                                                 {review.initials}
                                             </div>
                                         </div>

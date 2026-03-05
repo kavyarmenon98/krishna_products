@@ -79,7 +79,7 @@ function Nav() {
           <img
             src={logo3}
             alt="Logo"
-            className="h-9 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105 drop-shadow-[0_0_8px_rgba(0,161,209,0.4)]"
+            className="h-12 md:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105 drop-shadow-[0_0_8px_rgba(0,161,209,0.4)]"
           />
         </Link>
 
@@ -149,7 +149,7 @@ function Nav() {
           )}
 
           <a
-            href="https://www.instagram.com/arts_n_crafts_by_kavya/"
+            href="https://www.instagram.com/rathikaa_nairr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 text-gray-400 hover:text-[var(--color-primary)] transition-colors hidden sm:block"
@@ -245,7 +245,7 @@ function Nav() {
                 )}
 
                 <a
-                  href="https://www.instagram.com/arts_n_crafts_by_kavya/"
+                  href="https://www.instagram.com/rathikaa_nairr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-[var(--color-primary)] transition-colors"

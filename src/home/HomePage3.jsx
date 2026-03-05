@@ -42,7 +42,7 @@ function HomePage3() {
           <div className="h-1 w-20 bg-[var(--color-primary)] mt-6 md:mt-8 rounded-full" />
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="flex flex-col md:flex-row flex-wrap justify-center gap-8 md:gap-12">
           {categories.map((c, idx) => (
             <motion.div
               key={c.title}
@@ -50,6 +50,7 @@ function HomePage3() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
+              className="w-full md:w-[calc(45%-1.5rem)] lg:w-[calc(40%-2rem)] max-w-xl"
             >
               <ShopByCategory
                 title={c.title}
