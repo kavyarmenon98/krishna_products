@@ -133,8 +133,10 @@ export default function OrdersList() {
                       <img src={item.image} className="w-16 h-20 object-cover rounded-lg shrink-0" alt="" />
                       <div className="min-w-0">
                         <h4 className="text-white font-semibold text-sm truncate mb-1">{item.name}</h4>
-                        <p className="text-xs text-gray-500">{item.quantity} Unit · ₹{item.price}</p>
-                        <p className="text-[10px] text-[var(--color-primary)] font-bold mt-2">₹{item.price * item.quantity}</p>
+                        <p className="text-[10px] text-gray-500 font-medium uppercase tracking-tight">
+                          {item.quantity} Unit · ₹{item.price - 50} + ₹50 Courier
+                        </p>
+                        <p className="text-[10px] text-[var(--color-primary)] font-bold mt-2">Item Total: ₹{item.price * item.quantity}</p>
                       </div>
                     </div>
                   ))}

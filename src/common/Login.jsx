@@ -127,7 +127,7 @@ const Login = () => {
               <img src={main_logo} alt="Logo" className="w-50 relative z-10 mx-auto drop-shadow-lg" />
             </motion.div>
             <h2 className="text-2xl font-serif text-white mb-2 tracking-wide">Welcome Back</h2>
-            <p className="text-gray-400 text-sm opacity-80">Enter your credentials to access your account</p>
+            <p className="text-gray-400 text-sm opacity-80">Join our community</p>
           </div>
 
           <form onSubmit={formik.handleSubmit} className="space-y-7">
@@ -221,7 +221,7 @@ const Login = () => {
           transition={{ delay: 0.5 }}
           className="text-center text-white/20 text-xs mt-8"
         >
-          &copy; {new Date().getFullYear()} AK products. All rights reserved.
+          &copy; {new Date().getFullYear()} AK Products. All rights reserved.
         </motion.p>
       </div>
     </div>

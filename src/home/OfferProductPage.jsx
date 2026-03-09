@@ -74,9 +74,12 @@ export default function OfferProductPage() {
               <div className="absolute bottom-0 left-0 w-full p-8 translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
                 <h3 className="text-xl font-bold text-white mb-2 leading-tight">{product.pname}</h3>
 
-                <div className="flex items-center gap-4 mb-6">
-                  <span className="text-2xl font-bold text-[var(--color-primary)]">₹{product.discount}</span>
-                  <span className="text-gray-500 line-through text-sm">₹{product.price}</span>
+                <div className="flex flex-col mb-6">
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-2xl font-bold text-[var(--color-primary)]">₹{product.discount - 50}</span>
+                    <span className="text-[10px] text-gray-500 font-bold uppercase tracking-tighter self-center">+ ₹50 Courier</span>
+                  </div>
+                  <span className="text-gray-600 line-through text-[10px] font-bold">Total: ₹{product.price}</span>
                 </div>
 
                 <div className="flex items-center gap-2 text-white font-bold text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all duration-500">

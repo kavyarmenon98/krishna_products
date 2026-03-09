@@ -235,14 +235,19 @@ export default function ViewProduct() {
                   )}
                 </div>
 
-                <div className="mb-10 p-6 bg-white/5 border border-white/5 rounded-3xl inline-block">
+                <div className="mb-10 p-6 bg-white/5 border border-white/5 rounded-3xl inline-flex flex-col">
                   {product?.discountPercentage > 0 && (
-                    <p className="text-sm text-gray-500 line-through mb-1">Was ₹{product.price}</p>
+                    <p className="text-sm text-gray-500 line-through mb-1">Total Was ₹{product.price}</p>
                   )}
-                  <p className="text-4xl font-bold text-white tracking-tighter flex items-baseline gap-2">
-                    ₹{product?.discountPercentage > 0 ? product?.discount : product?.price}
-                    <span className="text-xs text-gray-500 font-normal tracking-normal uppercase">Indian Rupee</span>
-                  </p>
+                  <div className="flex flex-col">
+                    <p className="text-4xl font-bold text-white tracking-tighter flex items-baseline gap-2">
+                      ₹{product?.discountPercentage > 0 ? product?.discount - 50 : product?.price - 50}
+                      <span className="text-[var(--color-primary)] text-xl font-bold">+ ₹50</span>
+                    </p>
+                    <p className="text-[10px] text-gray-500 font-bold uppercase tracking-[0.2em] mt-1">
+                      Product Price + Courier Charge
+                    </p>
+                  </div>
                 </div>
 
                 <div className="space-y-4 mb-12">

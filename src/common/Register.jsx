@@ -133,7 +133,7 @@ const Register = () => {
               <img src={main_logo} alt="Logo" className="w-50 relative z-10 mx-auto drop-shadow-lg mb-6" />
               <h2 className="text-3xl font-serif text-white tracking-wide relative z-10">Create Account</h2>
             </motion.div>
-            <p className="text-gray-400 text-sm opacity-80">Join our community of art lovers</p>
+            <p className="text-gray-400 text-sm opacity-80">Join our community</p>
           </div>
 
           <form onSubmit={formik.handleSubmit} className="space-y-6">

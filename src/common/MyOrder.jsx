@@ -220,7 +220,7 @@ export default function MyOrders() {
                         <div className="flex flex-wrap items-center gap-6 text-[10px] font-black text-gray-500 uppercase tracking-[0.2em]">
                           <span>Quantity {item.quantity}</span>
                           <span className="w-1 h-1 bg-gray-800 rounded-full" />
-                          <span>₹{item.price} Unit Price</span>
+                          <span>₹{item.price - 50} Product + ₹50 Courier</span>
                         </div>
                       </div>
 

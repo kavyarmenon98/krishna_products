@@ -99,15 +99,27 @@ function ProductCard({ details }) {
                 <div className="text-right shrink-0">
                   {hasDiscount ? (
                     <div className="flex flex-col items-end">
-                      <span className="text-xs text-gray-500 line-through">
-                        ₹{item.price}
+                      <span className="text-[10px] text-gray-500 line-through">
+                        Total: ₹{item.price}
                       </span>
-                      <span className="text-[var(--color-primary)] font-bold text-lg">
-                        ₹{item.discount}
-                      </span>
+                      <div className="flex flex-col items-end">
+                        <span className="text-[var(--color-primary)] font-bold text-lg leading-none">
+                          ₹{item.discount - 50}
+                        </span>
+                        <span className="text-[10px] text-gray-400 font-medium uppercase tracking-tighter">
+                          + ₹50 Courier
+                        </span>
+                      </div>
                     </div>
                   ) : (
-                    <div className="font-bold text-lg">₹{item.price}</div>
+                    <div className="flex flex-col items-end">
+                      <span className="font-bold text-lg leading-none">
+                        ₹{item.price - 50}
+                      </span>
+                      <span className="text-[10px] text-gray-400 font-medium uppercase tracking-tighter">
+                        + ₹50 Courier
+                      </span>
+                    </div>
                   )}
                 </div>
               </div>

@@ -109,8 +109,11 @@ export default function OfferSlider() {
 
                                         <div className="flex items-center justify-between mt-auto">
                                             <div className="flex flex-col">
-                                                <span className="text-gray-600 line-through text-xs font-bold">₹{product.price}</span>
-                                                <span className="text-2xl font-black text-[var(--color-primary)] tracking-tighter">₹{product.discount}</span>
+                                                <span className="text-gray-600 line-through text-[10px] font-bold">Total: ₹{product.price}</span>
+                                                <div className="flex items-baseline gap-1">
+                                                    <span className="text-xl font-black text-[var(--color-primary)] tracking-tighter">₹{product.discount - 50}</span>
+                                                    <span className="text-[10px] text-gray-500 font-bold uppercase tracking-tighter">+ ₹50 Courier</span>
+                                                </div>
                                             </div>
                                             <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white group-hover:bg-[var(--color-primary)] group-hover:border-[var(--color-primary)] transition-all">
                                                 <FiArrowRight />

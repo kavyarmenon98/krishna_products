@@ -213,7 +213,7 @@ export default function CartPage() {
         key: import.meta.env.VITE_RAZORPAY_KEY_ID,
         amount: order.amount,
         currency: order.currency,
-        name: "AK products",
+        name: "AK Products",
         description: "Handcrafted with Love",
         order_id: order.id,
         handler: async (res) => {
@@ -222,7 +222,7 @@ export default function CartPage() {
             await verifyPaymentAPI(res);
 
             // Construct WhatsApp message after verification
-            const orderDetails = data.cart.map(item => `- ${item.name} (Qty: ${item.quantity}, Price: ₹${item.price})`).join('\n');
+            const orderDetails = data.cart.map(item => `- ${item.name} (Qty: ${item.quantity}, Price: ₹${item.price - 50} + ₹50 courier)`).join('\n');
             const total = calculateTotal();
             const whatsappMsg = `Hi Rathika Nair, I've just placed an order! 🎉\n\n🆔 *Order ID:* ${order.id}\n\n🛍️ *Order Details:*\n${orderDetails}\n\n💰 *Total Amount:* ₹${total}\n📍 *Shipping Address:* ${userData?.user?.address}\n\nPlease check the admin panel for details.`;
             const whatsappUrl = `https://wa.me/918943072598?text=${encodeURIComponent(whatsappMsg)}`;
@@ -361,9 +361,12 @@ export default function CartPage() {
                         </div>
 
                         <div className="flex items-center gap-3 mb-4">
-                          <span className="text-2xl font-bold text-[var(--color-primary)] tracking-tight">₹{item.price}</span>
+                          <div className="flex flex-col">
+                            <span className="text-xl font-bold text-[var(--color-primary)] tracking-tight">₹{item.price - 50}</span>
+                            <span className="text-[10px] text-gray-500 font-medium uppercase tracking-tighter">+ ₹50 Courier</span>
+                          </div>
                           {item.isDiscounted && (
-                            <span className="text-gray-600 line-through text-sm">₹{item.originalPrice}</span>
+                            <span className="text-gray-600 line-through text-xs self-start pt-1">Total: ₹{item.originalPrice}</span>
                           )}
                         </div>
 
@@ -421,11 +424,15 @@ export default function CartPage() {
               <div className="space-y-4 mb-8 flex-1">
                 <div className="flex justify-between text-gray-400 text-sm">
                   <span>Subtotal</span>
-                  <span className="text-white font-medium">₹{calculateTotal()}</span>
+                  <span className="text-white font-medium">
+                    ₹{calculateTotal() - (data?.cart?.reduce((sum, item) => sum + item.quantity, 0) || 0) * 50}
+                  </span>
                 </div>
                 <div className="flex justify-between text-gray-400 text-sm">
                   <span>Shipping</span>
-                  <span className="text-green-400 font-bold uppercase text-[10px] tracking-widest pt-1">Free</span>
+                  <span className="text-[var(--color-primary)] font-bold uppercase text-xs tracking-widest pt-1">
+                    + ₹{(data?.cart?.reduce((sum, item) => sum + item.quantity, 0) || 0) * 50}
+                  </span>
                 </div>
 
                 {/* Shipping Widget */}
